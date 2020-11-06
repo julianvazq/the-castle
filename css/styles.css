@@ -1,0 +1,101 @@
+:root {
+  --white: #fff;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white);
+  background-color: #414141;
+  background-image: url('../assets//castle-sm.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1000px;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+a {
+  color: var(--white);
+}
+
+a:visited {
+  color: var(--white);
+}
+
+img {
+  display: block;
+}
+
+/* Logos */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 130px;
+}
+
+.castle-logo {
+  width: 120px;
+}
+
+.lounge-logo {
+  width: 130px;
+}
+
+/* Body */
+.main-content {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.main-content > * {
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Josefin Sans', 'Montserrat', sans-serif;
+}
+
+.intro-text {
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.divider {
+  max-width: 300px;
+}
+
+/* Social Media Icons */
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a {
+  font-size: 1.75rem;
+  margin-right: 2rem;
+}
+
+.social-media a:last-of-type {
+  margin-right: 0;
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+  body {
+    background-image: url('../assets//castle-lg.jpg');
+  }
+
+  .social-media a {
+    margin-right: 3rem;
+  }
+}
