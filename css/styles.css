@@ -45,10 +45,12 @@ img {
 
 .castle-logo {
   width: 120px;
+  animation: fadeIn 500ms ease-out;
 }
 
 .lounge-logo {
   width: 130px;
+  animation: fadeIn 500ms ease-out 100ms;
 }
 
 /* Body */
@@ -61,23 +63,28 @@ img {
   margin: auto;
 }
 
-h1 {
+.title {
   font-family: 'Josefin Sans', 'Montserrat', sans-serif;
+  opacity: 0;
+  animation: fadeIn 500ms ease-out 200ms;
+}
+
+.divider {
+  max-width: 300px;
+  animation: fadeIn 500ms ease-out 300ms;
 }
 
 .intro-text {
   line-height: 1.7;
   max-width: 600px;
-}
-
-.divider {
-  max-width: 300px;
+  animation: fadeIn 500ms ease-out 400ms;
 }
 
 /* Social Media Icons */
 .social-media {
   display: flex;
   justify-content: center;
+  animation: fadeIn 500ms ease-out 500ms;
 }
 
 .social-media a {
@@ -87,6 +94,28 @@ h1 {
 
 .social-media a:last-of-type {
   margin-right: 0;
+}
+
+/* Animation */
+.castle-logo,
+.lounge-logo,
+.title,
+.divider,
+.intro-text,
+.social-media {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Media Queries */
