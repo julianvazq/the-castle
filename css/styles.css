@@ -128,3 +128,30 @@ img {
     margin-right: 3rem;
   }
 }
+
+@media (min-width: 1000px) {
+  .castle-logo {
+    width: 180px;
+  }
+
+  .lounge-logo {
+    width: 195px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .divider {
+    max-width: 450px;
+  }
+
+  .intro-text {
+    font-size: 1.5rem;
+    max-width: 800px;
+  }
+
+  .social-media a {
+    margin-right: 3rem;
+  }
+}
