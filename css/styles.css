@@ -129,7 +129,7 @@ img {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   body {
     margin: 4rem auto;
     max-width: none;
@@ -137,15 +137,15 @@ img {
   }
 
   .logo-container {
-    max-width: 260px;
+    max-width: 195px;
   }
 
   .castle-logo {
-    width: 240px;
+    width: 180px;
   }
 
   .lounge-logo {
-    width: 260px;
+    width: 195px;
   }
 
   .title {
@@ -164,5 +164,19 @@ img {
   .social-media a {
     margin-right: 3rem;
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .logo-container {
+    max-width: 260px;
+  }
+
+  .castle-logo {
+    width: 240px;
+  }
+
+  .lounge-logo {
+    width: 260px;
   }
 }
