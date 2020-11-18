@@ -13,6 +13,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: var(--white);
+  color: #fff;
   background-color: #414141;
   background-image: url('../assets//castle-sm.jpg');
   background-repeat: no-repeat;
@@ -25,10 +26,12 @@ body {
 
 a {
   color: var(--white);
+  color: #fff;
 }
 
 a:visited {
   color: var(--white);
+  color: #fff;
 }
 
 img {
@@ -44,12 +47,12 @@ img {
 }
 
 .castle-logo {
-  width: 120px;
+  max-width: 120px;
   animation: fadeIn 500ms ease-out;
 }
 
 .lounge-logo {
-  width: 130px;
+  max-width: 130px;
   animation: fadeIn 500ms ease-out 100ms;
 }
 
@@ -57,6 +60,7 @@ img {
 .main-content {
   margin: 4rem 0;
   text-align: center;
+  display: block;
 }
 
 .main-content > * {
@@ -141,11 +145,11 @@ img {
   }
 
   .castle-logo {
-    width: 180px;
+    max-width: 180px;
   }
 
   .lounge-logo {
-    width: 195px;
+    max-width: 195px;
   }
 
   .title {
@@ -173,10 +177,10 @@ img {
   }
 
   .castle-logo {
-    width: 240px;
+    max-width: 240px;
   }
 
   .lounge-logo {
-    width: 260px;
+    max-width: 260px;
   }
 }
